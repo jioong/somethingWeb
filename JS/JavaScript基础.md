@@ -202,4 +202,9 @@
   
 **childNodes 属性：**把给定节点树里的任何一个元素的所有子元素检索出来，除了元素节点，所有的属性节点和文本节点也包含在其中，**返回为一个数组。**事实上，文档里几乎每一样东西都是一个节点，甚至空格和换行符都会被解释为节点，而它们也包含在 `childNodes` 属性所返回的数组中。  
 **nodeType 属性：**返回值为一个数字。1）元素节点的属性值为 1， 2）属性节点的属性值为 2， 3）文本节点的属性值为 3 .  
-**nodeValue 属性：**如果想要改变某个文本节点的值，就可以使用 `nodeValue` 属性。
+**nodeValue 属性：**如果想要改变某个文本节点的值，就可以使用 `nodeValue` 属性。  
+  
+### firstChild 和 lastChild 属性 ###
+  
+数组元素 `childNodes[0]` 即为 `firstChild`。`lastChild` 属性则为 `childNodes[]` 数组的最后一个元素 `childNodes[node.childNodes.length - 1]` 。  
+  
