@@ -83,4 +83,35 @@
 	context.moveTo(5, 50);
 	context.bezierCurveTo(30, 30, 130, 530, 200, 100);
 	context.stroke();  
-```
+```   
+  
+**线性渐变：**  
+线性渐变可以通过 `createLinearGradient()`方法实现。通过`addColorStop`方法给渐变增加颜色，调用该方法时需要指出 `x, y` 轴坐标。如：  
+```html5
+	var gradient = context.createLinearGradient(0, 0,0, 145);
+	gradient.addColorStop(0, "#00ABEB");
+	gradient.addColorStop(0.5, "yellow");
+	gradient.addColorStop(0.8, "green");
+	gradient.addColorStop(1, "white");
+	context.fillStyle = gradient;
+	context.fillRect(5, 5, 145, 145);
+```  
+  
+## 线条，文本，阴影 ##
+   
+**线条：**  
+每个`canvas`有一条路径。定义一条路径就像画一条线一样。**先定义一条路径，然后填充路径。**下面是一些相关属性和函数用于画线条：  
+* `lineWidth[=value]` 返回当前线宽。也能用于设置新的宽度值。  
+* `lineCap[=value]` 返回当前线冒风格。也能用于设置新的风格。可选值为`butt, round, square`  
+* `lineJoin=[value]` 返回当前**线连接风格**。也能用于设置新的连接风格。可选值为`bevel, round, miter`  
+
+画线需要调用`moveTo, lineTo` 方法。方法接受两个参数 `x,y` 明确指出确定坐标。也能通过 `lineWidth` 指定线宽。一旦定义了线条，需要调用 `stroke` 去画线。  
+  
+**文本：**  
+与网页上的文本不同，这里没有**盒模型，**也就意味这*CSS样式*不能使用。相关属性和方法：  
+* `font[=value]` 返回当前字体设置。也能用于设置新的字体。语法与*CSS*字体属性相同。  
+* `textAlign[=value]` 返回当前文本对齐设置。也能用于设置新的对齐方式。可选值为`start, end, left, right, center`  
+* `textBaseline[=value]` 返回当前基线对齐设置。也用于设置新的基线对齐  
+* `fillText(text, x, y [,maxWidth])` 在指定位置填充文本  
+* `strokeText(text, x, y[,maxWidth])` 在指定位置画文本  
+* 
