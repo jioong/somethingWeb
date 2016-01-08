@@ -27,4 +27,6 @@
 * `E:active` 用户动作伪类  
 * `E:hover` 用户动作伪类。  
 * `E:focus` 用户动作伪类。  
-* `E:target` 目标伪类，                                                                                                                               
+* `E:target` 目标伪类，   
+* `E:lang(fr)` 指定文档语言。  
+* `E:enabled`                                                                                                                               
