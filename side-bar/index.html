@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/lib/fontello.css"/>
+    <link rel="stylesheet" href="css/lib/normalize.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/sidebar.css"/>
+</head>
+<body>
+<header>
+    <div class="header">
+
+    </div>
+</header>
+<div class="mcontent">
+    <div class="wrapper jsc-sidebar-content jsc-sidebar-pulled">
+        <nav class="nav-icon">
+            <a href="#" class="icon-menu link-menu jsc-sidebar-trigger"></a>
+        </nav>
+        <section class="main-content">
+            <h1 class="headline"><span class="headline-main">Sidebar</span>JS</h1>
+            <p>v 0.0.9</p>
+            <p>SidebarJS is a jQuery plugin for side navigation.</p>
+
+        </section>
+    </div>
+
+    <nav class="sidebar jsc-sidebar" id="jsi-nav" data-sidebar-options="">
+        <ul class="sidebar-list">
+            <li><a href="./" class="current">SidebarJS</a></li>
+            <li><a href="http://github.com/makotot/sidebar/">View on Github</a></li>
+            <li><a href="http://github.com/makotot/sidebar/">Download</a></li>
+        </ul>
+    </nav>
+</div>
+<footer>
+    <div class="footer"></div>
+</footer>
+<script src="js/lib/jquery.min.js"></script>
+
+<script src="js/sidebar.js"></script>
+
+<script>
+    $('#jsi-nav').sidebar({
+        trigger: '.jsc-sidebar-trigger',
+        pullCb: function () {
+            console.log('pull');
+        },
+        pushCb: function () {
+            console.log('push');
+        }
+    });
+</script>
+</body>
+</html>
