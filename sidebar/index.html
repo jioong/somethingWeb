@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery侧边导航插件SidebarJS_dowebok</title>
+    <link rel="stylesheet" type="text/css" href="./css/sidebar.css">
+</head>
+
+<body>
+<h1 style="display: none;">jQuery仿Google Play滚动效果插件plusview演示</h1>
+
+<div class="wrapper jsc-sidebar-content jsc-sidebar-pulled jsc-sidebar-opened jsc-sidebar-pushed jsc-sidebar-push-end">
+    <div><a href="#" class="icon-menu link-menu jsc-sidebar-trigger" style="font-family: '黑体';">三</a></div>
+    <div class="main-content">
+        <h1 class="headline"><span class="headline-main">Sidebar</span>JS</h1>
+        <p>v 0.0.8</p>
+        <p>SidebarJS 是一个 jQuery 侧边伸缩导航插件</p>
+        <p>请点击左上角的按钮</p>
+        <p class="download"><a href="http://www.dowebok.com/63.html" class="btn-download" target="_blank">说明 & 下载</a>
+        </p>
+    </div>
+</div>
+
+<div class="sidebar jsc-sidebar" id="jsi-nav" data-sidebar-options="">
+    <ul class="sidebar-list">
+        <li><a href="http://www.dowebok.com/63.html" class="current" target="_blank">SidebarJS</a></li>
+        <li><a href="http://www.dowebok.com/63.html" target="_blank">说明</a></li>
+        <li><a href="http://www.dowebok.com/63.html" target="_blank">下载</a></li>
+        <li><a href="http://www.dowebok.com/code" target="_blank">代码</a></li>
+        <li><a href="http://www.dowebok.com/" target="_blank">dowebok.com</a></li>
+    </ul>
+</div>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/sidebar.js"></script>
+<script>
+    $('#jsi-nav').sidebar({
+        trigger: '.jsc-sidebar-trigger'
+    });
+</script>
+
+</body>
+</html>
