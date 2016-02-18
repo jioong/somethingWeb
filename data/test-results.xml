@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<testsuite name="Firefox 43.0.0 (Windows 10 0.0.0)" package="" timestamp="2016-02-18T13:39:53" id="0" hostname="liujiong" tests="2" errors="0" failures="1" time="0.002">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; rv:43.0) Gecko/20100101 Firefox/43.0"/>
+  </properties>
+  <testcase name="test" time="0.001" classname="Firefox_43_0_0_(Windows_10_0_0_0).A suite of basic functions"/>
+  <testcase name="second" time="0.001" classname="Firefox_43_0_0_(Windows_10_0_0_0).A suite of basic functions">
+    <failure type="">Expected 'bcda' to equal 'bcdddd'.
+@C:/Users/Administrator/Desktop/karma/test/jasmineTest.js:7:3
+</failure>
+  </testcase>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
